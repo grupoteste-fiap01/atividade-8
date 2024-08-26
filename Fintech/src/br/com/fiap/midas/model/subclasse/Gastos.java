@@ -28,8 +28,12 @@ public class Gastos extends Financas {
 
     @Override
     public String toString() {
-        String value = STR."Seu gasto:\n Valor: \{getValor()}\n Data: \{getData()}\n Descrição: \{getDescricao()}\n" +
-                STR." Categoria: \{getCategoria()}\nFoi cadastrado com sucesso!";
+        String value = "Seu gasto:\n Valor: " + getValor()
+                + "\n Data: " + getData()
+                + "\n Descrição: " + getDescricao()
+                + "\n Categoria: " + getCategoria()
+                + "\nFoi cadastrado com sucesso!";
+
         System.out.println(value);
         return value;
     }

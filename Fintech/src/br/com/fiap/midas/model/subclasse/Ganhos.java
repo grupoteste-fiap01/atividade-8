@@ -21,8 +21,11 @@ public class Ganhos extends Financas {
 
     @Override
     public String toString() {
-        String value = STR."Seu ganho:\n Valor: \{getValor()}\n Data: \{getData()}\n Descrição: \{getDescricao()}\n" +
-                "Foi cadastrado com sucesso!";
+        String value = "Seu ganho:\n Valor: " + getValor()
+                + "\n Data: " + getData()
+                + "\n Descrição: " + getDescricao()
+                + "\nFoi cadastrado com sucesso!";
+
         System.out.println(value);
         return value;
     }
