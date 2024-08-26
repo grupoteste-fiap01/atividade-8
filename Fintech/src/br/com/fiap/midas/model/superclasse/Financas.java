@@ -1,24 +1,24 @@
-package br.com.fiap.model;
+package br.com.fiap.midas.model.superclasse;
 
-public class Transacao {
+public abstract class Financas {
     // Atributos
     private double valor;
     private String data;
     private String descricao;
 
     // Construtor padrão
-    public Transacao() {
+    public Financas() {
 
     }
 
-    // Construtor da superclasse
-    public Transacao(double valor, String data, String descricao) {
+    // Construtor personalizado
+    public Financas(double valor, String data, String descricao) {
         this.valor = valor;
         this.data = data;
         this.descricao = descricao;
     }
 
-    // Getters e Setters da superclasse (comuns a br.com.fiap.model.Gastos e br.com.fiap.model.Ganhos)
+    // Getters e Setters comuns aos Gastos e Ganhos
     public double getValor() {
         return valor;
     }
@@ -42,4 +42,6 @@ public class Transacao {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public abstract String toString();
 }
